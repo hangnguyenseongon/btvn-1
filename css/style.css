@@ -748,7 +748,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-bottom: 48px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .service-card {
@@ -758,6 +758,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 32px;
   transition: var(--transition);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .service-card:hover {
   border-color: var(--primary);
@@ -836,6 +838,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: baseline;
   gap: 4px;
+  margin-top: auto;
   margin-bottom: 20px;
 }
 .sc-from { font-size: .8rem; color: rgba(255,255,255,.5); }

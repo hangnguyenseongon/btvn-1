@@ -103,23 +103,12 @@ filterBtns.forEach(btn => {
         card.style.opacity = '1';
         card.style.transform = '';
         card.style.pointerEvents = '';
-        card.style.display = '';
       } else {
         card.style.opacity = '0';
         card.style.transform = 'scale(0.95)';
         card.style.pointerEvents = 'none';
-        setTimeout(() => {
-          if (card.style.opacity === '0') card.style.display = 'none';
-        }, 300);
       }
     });
-
-    setTimeout(() => {
-      csCards.forEach(card => {
-        const match = filter === 'all' || card.dataset.category === filter;
-        if (match) card.style.display = '';
-      });
-    }, 0);
   });
 });
 
